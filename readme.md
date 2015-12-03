@@ -75,8 +75,8 @@ var product = x * y;                // 12
 
 Operators have a precedence (just like we learned in grade school). The precedence is:
 
-higher:  *, /, %
-lower:   +, -
+* higher precedence:  *, /, %
+* lower precedence:   +, -
 
 Expressions are evaluated left-to-right and higher to lower in precedence. For example:
 
