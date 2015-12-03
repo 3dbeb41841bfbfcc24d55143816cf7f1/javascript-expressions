@@ -8,7 +8,7 @@
 * JavaScript has become the de facto standard language for Web pages running in a browser.
 * Thanks to NodeJS and the V8 JavaScript engine developed at Google, JavaScript can now be used outside of the browser as a general purpose, full featured programming language.
 * JavaScript is arguably the fastest growing (in popularity) programming language.
-* JavaScript is a general purpose programming language that supports the two most common programming paradigms: **Object Oriented Programming** (OOP) and **Functional Programming** (FP).
+* JavaScript is a general purpose programming language that supports the two most common programming paradigms: ***Object Oriented Programming*** (OOP) and ***Functional Programming*** (FP).
 * JavaScript is [the world's most misunderstood programming language](http://javascript.crockford.com/javascript.html)
 
 ## Javascript and HTML Pages - Where does the JavaScript go?
@@ -20,9 +20,10 @@ When placing JavaScript in a web page, the JavaScript can go in one of the follo
 * In a separate file loaded by the script tag
 
 ## Variables
-* JavaScript variables have a **name** and a **value**
-* JavaScript names should be camelCase (a common best practice / rule of thumb)
-* Values are of a **type** such as **String**, **Number**, or **Boolean**
+* JavaScript variables are declared using the ***var*** keyword.
+* JavaScript variables have a ***name*** and a ***value***.
+* JavaScript names should be camelCase (a common best practice / rule of thumb).
+* Values are of a ***type*** such as ***String***, ***Number***, or ***Boolean***.
 
 Here are some examples of JavaScript Variables:
 
