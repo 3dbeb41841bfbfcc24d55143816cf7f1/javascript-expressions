@@ -43,8 +43,6 @@ When placing JavaScript in a web page, the JavaScript can go in one of the follo
 </html>
 ```
 
-
-
 ## Variables
 * JavaScript variables are declared using the ***var*** keyword.
 * JavaScript variables have a ***name*** and a ***value***.
