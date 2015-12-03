@@ -237,3 +237,7 @@ JavaScript has 2 special values, **null** and **undefined**.
 var x = null;                       // the value of x is null
 var y;                              // the value of y is undefined
 ```
+
+## Exercise - Temperature Conversion
+
+[Temperature Converter](https://github.com/ATL-WDI-Exercises/temperature_converter)
