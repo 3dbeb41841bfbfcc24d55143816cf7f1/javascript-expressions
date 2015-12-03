@@ -1,4 +1,4 @@
-# Introduction to JavaScript - Expressions and Data Types
+# JavaScript Expressions and Data Types
 
 ## JavaScript History and Fun Facts
 
