@@ -49,6 +49,12 @@ When placing JavaScript in a web page, the JavaScript can go in one of the follo
 * JavaScript variables are declared using the ***var*** keyword.
 * JavaScript variables have a ***name*** and a ***value***.
 * JavaScript names should be camelCase (a common best practice / rule of thumb).
+
+```javascript
+var camelCase = 'Camel case capitalizes each word (except the first one).';
+var snake_case = 'Snake case is *not* recommended for JavaScript.';
+```
+
 * Values are of a ***type*** such as ***String***, ***Number***, or ***Boolean***.
 
 Here are some examples of JavaScript Variables:
