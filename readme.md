@@ -12,6 +12,9 @@
 * JavaScript is a general purpose programming language that supports the two most common programming paradigms: ***Object Oriented Programming*** (OOP) and ***Functional Programming*** (FP).
 * JavaScript is [the world's most misunderstood programming language](http://javascript.crockford.com/javascript.html)
 
+![JavaScript Misunderstood](https://raw.githubusercontent.com/ATL-WDI-Curriculum/javascript-expressions/master/images/javascript-misunderstood.png)
+
+
 ## Javascript and HTML Pages - Where does the JavaScript go?
 
 When placing JavaScript in a web page, the JavaScript can go in one of the following locations:
