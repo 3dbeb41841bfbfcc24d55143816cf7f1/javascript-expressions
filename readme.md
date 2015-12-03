@@ -4,6 +4,7 @@
 
 * JavaScript is not to be confused with Java, they are 2 completely different programming languages.
 * JavaScript was created in 10 days in May 1995 by Brendan Eich, then working at Netscape and now of Mozilla.
+* Eich was inspired by several other languages including ***Scheme*** (a variant of Lisp) and ***Self***.
 * In 1996 - 1997 JavaScript was taken to ECMA to carve out a standard specification, which other browser vendors could then implement based on the work done at Netscape.
 * JavaScript has become the de facto standard language for Web pages running in a browser.
 * Thanks to NodeJS and the V8 JavaScript engine developed at Google, JavaScript can now be used outside of the browser as a general purpose, full featured programming language.
@@ -18,6 +19,31 @@ When placing JavaScript in a web page, the JavaScript can go in one of the follo
 * In a script tag inside the head section
 * In a script tag inside the body section
 * In a separate file loaded by the script tag
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yo</title>
+    <script>
+      console.log('I am in the head section.');
+      var x = 3;
+      console.log('The value of x is ' + x);
+    </script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Hello, WDI!</h1>
+    <script>
+      console.log('I am in the body section.');
+      x += 5;
+      console.log('The value of x is ' + x);
+    </script>
+  </body>
+</html>
+```
+
+
 
 ## Variables
 * JavaScript variables are declared using the ***var*** keyword.
@@ -75,24 +101,36 @@ var product = x * y;                // 12
 
 Operators have a precedence (just like we learned in grade school). The precedence is:
 
-* higher precedence:  *, /, %
-* lower precedence:   +, -
+1. parentheses: ()
+2. *, /, %
+3. +, -
 
-Expressions are evaluated left-to-right and higher to lower in precedence. For example:
+This can be remembered by the mneumonic PeMDAS (Parentheses, Multiplication, Division, Addition, Subtraction).
+
+Expressions are evaluated from higher to lower precedence and then from left to right. For example:
 
 ```javascript
 var x = 3 + 4 * 5 / 2 - 1;
+```
 
-/* will be evaluated as:
+will be evaluated as:
+
 3 + ( (4 * 5) / 2 ) - 1       // multiplication and division first (executed left to right)
 3 + ( (20 / 2 ) - 1
 3 + 10 - 1                    // addition and subtraction last (executed left to right)
 13 - 1
 12
-*/
 
-var sumOfSquares = 3 * 3 + 4 * 4   // 25
+Question: what is the output of the following:
+
+```javascript
+var x = 5;
+var y = 3;
+var answer = 2 + x * (x + 1) / y - 3;
+console.log(answer);
 ```
+
+Try it in your browser to confirm your answer.
 
 There are also compound assignment statements such as += and -=. These extend out to x = x operator y.
 
@@ -146,14 +184,24 @@ parseInt('hello', 10);              // NaN
 ## Booleans
 * A boolean value can be either **true** or **false**.
 * Boolean values can be combined using the logical operators && (AND) and || (OR).
-* The logical && operator has higher precedence than the logical || operator.
+* The boolean ! (NOT) operator will invert the boolean value.
+* The order of boolean operator precedence is:
+  1. !
+  2. &&
+  3. ||
+
 
 ```javascript
-var x = true;
-var y = false;
+var a = 3;
+var b = 5;
+var c = -12;
+var x = a < b;   // true
+var y = c > 0;   // false
 
-x && y                              // false
-x || y                              // true
+!x               // false
+x && y           // false
+x || y           // true
+x && !y          // true
 ```
 
 ## Special Values
