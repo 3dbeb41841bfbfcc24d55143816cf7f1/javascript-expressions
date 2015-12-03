@@ -86,6 +86,25 @@ multiple lines.
 var y = 4;
 ```
 
+## Semicolons
+It is good practice to end every statement with a semi-colon.
+
+## Bad Style
+
+```javascript
+x = 3
+```
+
+This will often work but is not considered good style and can lead to subtle bugs in your code.
+
+The proper code is:
+
+```javascript
+var x = 3;
+```
+
+Here we have used the `var` keyword to declare the variable `x` and we have also added the semicolon at the end of the assignment statement.
+
 ## Datatypes
 
 * Primary: String, Number, Boolean
