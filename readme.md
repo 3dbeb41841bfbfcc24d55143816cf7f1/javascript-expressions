@@ -15,6 +15,7 @@
 ![JavaScript Misunderstood](https://raw.githubusercontent.com/ATL-WDI-Curriculum/javascript-expressions/master/images/javascript-misunderstood.png)
 
 
+
 ## Javascript and HTML Pages - Where does the JavaScript go?
 
 When placing JavaScript in a web page, the JavaScript can go in one of the following locations:
@@ -47,13 +48,14 @@ When placing JavaScript in a web page, the JavaScript can go in one of the follo
 ```
 
 ## Variables
-* JavaScript variables are declared using the ***var*** keyword.
+
+* JavaScript variables are declared using the ***var*** keyword (or the ***let*** keyword in ECMAScript 6).
 * JavaScript variables have a ***name*** and a ***value***.
 * JavaScript names should be camelCase (a common best practice / rule of thumb).
 
 ```javascript
 var camelCase = 'Camel case capitalizes each word (except the first one).';
-var snake_case = 'Snake case is *not* recommended for JavaScript.';
+var snake_case = 'Snake case is *not* recommended for JavaScript (but is recommended for Ruby).';
 ```
 
 * Values are of a ***type*** such as ***String***, ***Number***, or ***Boolean***.
@@ -74,6 +76,7 @@ var fullName = person.firstName + ' ' + person.lastName;
 ```
 
 ## Comments
+
 You can add single-line comments to JavaScript using `//` and multi-line comments using `/*` and `*/`.
 
 ```javascript
@@ -90,6 +93,7 @@ var y = 4;
 ```
 
 ## Semicolons
+
 It is good practice to end every statement with a semi-colon.
 
 ## Bad Style
@@ -112,7 +116,8 @@ Here we have used the `var` keyword to declare the variable `x` and we have also
 
 * Primary: String, Number, Boolean
 * Composite: Array, Object
-* Special Values: null, undefined, NaN
+* Special Values: null, undefined
+* Special Numeric Values: NaN, Infinity
 
 ### Number Operations
 
@@ -141,19 +146,19 @@ var x = 3 + 4 * 5 / 2 - 1;
 
 will be evaluated as:
 
-3 + ( (4 * 5) / 2 ) - 1       // multiplication and division first (executed left to right)
-3 + ( (20 / 2 ) - 1
-3 + 10 - 1                    // addition and subtraction last (executed left to right)
-13 - 1
-12
+    3 + ( (4 * 5) / 2 ) - 1       // multiplication and division first (executed left to right)
+    3 + ( (20 / 2 ) - 1
+    3 + 10 - 1                    // addition and subtraction last (executed left to right)
+    13 - 1
+    12
 
 Question: what is the output of the following:
 
 ```javascript
 var x = 5;
 var y = 3;
-var answer = 2 + x * (x + 1) / y - 3;
-console.log(answer);
+var result = 2 + x * (x + 1) / y - 3;
+console.log(result);
 ```
 
 Try it in your browser to confirm your answer.
@@ -208,6 +213,7 @@ parseInt('hello', 10);              // NaN
 ```
 
 ## Booleans
+
 * A boolean value can be either **true** or **false**.
 * Boolean values can be combined using the logical operators && (AND) and || (OR).
 * The boolean ! (NOT) operator will invert the boolean value.
@@ -215,7 +221,6 @@ parseInt('hello', 10);              // NaN
   1. !
   2. &&
   3. ||
-
 
 ```javascript
 var a = 3;
@@ -231,6 +236,7 @@ x && !y          // true
 ```
 
 ## Special Values
+
 JavaScript has 2 special values, **null** and **undefined**.
 
 * null - indicates a deliberate non-value
