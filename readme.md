@@ -114,10 +114,10 @@ Here we have used the `var` keyword to declare the variable `x` and we have also
 
 ## Datatypes
 
-* Primary: String, Number, Boolean
-* Composite: Array, Object
-* Special Values: null, undefined
-* Special Numeric Values: NaN, Infinity
+* Primary: `String`, `Number`, `Boolean`
+* Composite: `Array`, `Object`
+* Special Values: `null`, `undefined`
+* Special Numeric Values: `NaN`, `Infinity`
 
 ### Number Operations
 
@@ -239,8 +239,8 @@ x && !y          // true
 
 JavaScript has 2 special values, **null** and **undefined**.
 
-* null - indicates a deliberate non-value
-* undefined - indicates an uninitialized value
+* `null` - indicates a deliberate non-value
+* `undefined` - indicates an uninitialized value
 
 ```javascript
 var x = null;                       // the value of x is null
