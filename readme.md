@@ -247,6 +247,39 @@ var x = null;                       // the value of x is null
 var y;                              // the value of y is undefined
 ```
 
+## Type Casting and Type Coercion
+
+Sometimes we need a variable of one type to be converted into a different type (usually inside of an expression). The conversion can either be explicit (casting) or implicit (coercion).
+
+* _Casting_ - the code explicitly convert a variable into a different type.
+* _Coercion_ - the JavaScript runtime converts the variable into a different type in an attempt to evaluate an expression that needs the data to be in the new type.
+
+Below is an example.
+
+```javascript
+// type casting - explicit
+var n = Number('123');    // cast a string to a number
+var s = String(456);      // cast a number to a string
+var b = Boolean('');      // cast a string to a boolean (follows the rules of truthy/falsey)
+
+console.log(n, s, b);
+
+var n2 = +'-123';         // coercion to Number to satisfy the unary `+` operator
+var s2 = '' + 456;        // coercion to String to satisfy the binary `+` operator with a string on the LHS
+var b2 = !!'';            // coercion to Boolean to satisfy the logical NOT operator
+
+console.log(n2, s2, b2);
+
+var b3 = -1;              // try different values here
+var b3AsABoolean = !!b3;
+if (b3) {
+	console.log('b3 is truthy');
+}
+else {
+	console.log('b3 is falsey');
+}
+```
+
 ## Exercise - Temperature Conversion
 
 [Temperature Converter](https://github.com/ATL-WDI-Exercises/temperature_converter)
